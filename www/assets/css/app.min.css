@@ -75,6 +75,100 @@ body {
       padding-left: 0.625em;
       padding-right: 0.625em; } }
 
+.last-story {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  white-space: nowrap; }
+
+.next-story {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  white-space: nowrap; }
+
+.article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .article__nav-story {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-top: 20em; }
+  .article__intro-section {
+    text-align: center;
+    margin-bottom: 2.5em; }
+  .article__introduction {
+    text-align: left;
+    margin-left: 5.625em;
+    margin-right: 5.625em; }
+    @media only screen and (max-width: 960px) {
+      .article__introduction {
+        margin-left: 0em;
+        margin-right: 0em; } }
+  .article__content-section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around; }
+    @media only screen and (max-width: 960px) {
+      .article__content-section {
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap; } }
+  .article__text {
+    margin-left: 1.875em; }
+    @media only screen and (max-width: 960px) {
+      .article__text {
+        margin-left: 0em; } }
+  .article__image-caption {
+    text-align: right; }
+  .article__image > img {
+    width: 100%;
+    height: auto; }
+
+.credits {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .credits__body {
+    text-align: center;
+    width: 100%; }
+
+.credits-list__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .credits-list__item-position {
+    font-weight: bold;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
+            flex: 1 50%;
+    text-align: right;
+    margin-right: 0.3125em; }
+  .credits-list__item-name {
+    margin-left: 0.3125em;
+    -webkit-box-flex: 1;
+        -ms-flex: 1 50%;
+            flex: 1 50%;
+    text-align: left; }
+
 .story-list {
   display: -webkit-box;
   display: -ms-flexbox;
